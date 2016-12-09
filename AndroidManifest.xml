@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.zhengping.contact"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application 
+    	android:icon="@drawable/androidcontact" 
+    	android:label="Contact"
+    	>
+        <activity android:name=".Main"
+                  android:label="Contact">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+			android:name=".UserDetail"/>
+			<activity
+			android:name=".AddNew"/>
+			<activity
+			android:name=".MainPrivacy"/>
+    </application>
+
+
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest> 
